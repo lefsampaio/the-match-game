@@ -55,6 +55,11 @@ body {
   margin-bottom: -20px;
 }
 
+.logo-avatar{
+  width: 120px;
+  
+}
+
 .primary-input{
   border-radius: 18px;
   width: 238px;
@@ -362,6 +367,10 @@ display: none;
   background-size: 29px;
   color:#feffff;
   padding: 6px 9px;
+}
+
+.nav-bar {
+  background-color:#643173; 
 }
 
 @media (min-width: 900px){

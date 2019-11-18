@@ -1,0 +1,26 @@
+[debug] [2019-11-18T21:27:31.303Z] ----------------------------------------------------------------------
+[debug] [2019-11-18T21:27:31.306Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-11-18T21:27:31.307Z] CLI Version:   7.4.0
+[debug] [2019-11-18T21:27:31.307Z] Platform:      linux
+[debug] [2019-11-18T21:27:31.307Z] Node Version:  v8.10.0
+[debug] [2019-11-18T21:27:31.307Z] Time:          Mon Nov 18 2019 18:27:31 GMT-0300 (-03)
+[debug] [2019-11-18T21:27:31.307Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-11-18T21:27:31.318Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-18T21:27:31.318Z] > authorizing via signed-in user
+[debug] [2019-11-18T21:27:31.318Z] [iam] checking project thematchgame-cfe88 for permissions ["firebase.projects.get"]
+[debug] [2019-11-18T21:27:31.321Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/thematchgame-cfe88:testIamPermissions  
+
+[debug] [2019-11-18T21:27:32.654Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-18T21:27:32.659Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/thematchgame-cfe88  
+ 
+[debug] [2019-11-18T21:27:34.114Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/fabricia/Desktop/the-match-game'...
+[info] 
+[debug] [2019-11-18T21:27:34.125Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/thematchgame-cfe88/webApps/-/config  
+ 
+[debug] [2019-11-18T21:27:35.610Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[info] i  hosting: Serving hosting files from: src
+[info] ✔  hosting: Local server: http://localhost:5005
