@@ -8,7 +8,7 @@ const Google = (props) => {
 
 window.input = {
   handleClick: (event, callBack) => {
-    callBack();
+    callBack(event);
 
   },
 };

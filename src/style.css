@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Hind|Righteous&display=swap');
 
 body {
-  background-color: #290a41;
+  background-color: #73392C;
   margin: 0;
 }
 
@@ -29,6 +29,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 15%;
 }
 
 .primary-button {
@@ -365,6 +366,9 @@ display: none;
 
 @media (min-width: 900px){
 
+  .container{
+    margin: 0px;
+  }
   .cover{
     display: inline;
     border-radius: 6px 6px 0 0;
