@@ -1,7 +1,6 @@
 import Button from '../components/button.js'; 
 import Input from '../components/input.js';
-
-
+import avatar from '../avatarDB.js';
 
 const location = () => {
   location.hash = '';
@@ -87,6 +86,7 @@ function newUser() {
   userName.value = '';
   
 })
+
 }
 
 
@@ -96,6 +96,7 @@ window.userData = {
   name: null,
   game: null
 }
+
 
 
 

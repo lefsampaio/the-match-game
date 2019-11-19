@@ -1,4 +1,4 @@
-[18:28, 19/11/2019] Leticia Sampaio - Lab: const avatar = [
+const avatar = [
     {
         "id": 1,
         "url":"https://i.imgur.com/g1tMFft.png",

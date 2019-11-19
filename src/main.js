@@ -22,6 +22,7 @@ const authCheck = () => {
   });
 };
 
+
+
 window.addEventListener('load', authCheck);
 window.addEventListener('hashchange', authCheck);
-
