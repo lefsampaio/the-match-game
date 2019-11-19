@@ -31,7 +31,7 @@ body {
   flex-direction: column;
 }
 .escolha-avatar{
-margin: 4%;
+margin: 6% 2% 4% 8%;
 }
 
 .btn-add {
@@ -46,12 +46,16 @@ margin: 4%;
   font-size: 16px;
 }
 
+.btn-voltar{
+  margin-left: 65%;
+}
+
 .primary-button {
   padding: 10px;
   border-radius: 30px;
   border: none;
   cursor: pointer;
-  background-color:  #e1bee7;
+  background-color: #D93D3D;
   color: #000000;
   width: 126px;
   height: 40px;
@@ -70,8 +74,15 @@ margin: 4%;
 }
 
 .logo-avatar{
-  width: 120px;
-  
+  width: 50%;
+}
+
+.btn-avt{
+  background: none;
+  border: 0;
+  width: 30%;
+  border-bottom: none;
+
 }
 
 .primary-input{
@@ -384,7 +395,7 @@ display: none;
 }
 
 .nav-bar {
-  background-color:#643173; 
+  background-color:#542A20; 
 }
 
 @media (min-width: 900px){
