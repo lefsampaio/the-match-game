@@ -2,8 +2,12 @@ import Button from '../components/button.js';
 import Input from '../components/input.js';
 import avatar from '../avatarDB.js';
 
-const location = () => {
-  location.hash = '';
+const logout = () => {
+  app.auth.signOut()
+    .then(() => location.hash = '')
+    .catch((error) => {
+      `<p>${error}</p>`
+    });
 };
 
 const data = avatar
@@ -30,7 +34,7 @@ const Profile = () => {
     type: "button",
     title: "Voltar",
     class: "primary-button btn-voltar",
-    onClick: location,
+    onClick: logout,
     disabled: "enabled"
   })}
   </nav>
@@ -80,11 +84,10 @@ function newUser() {
   userData.name = userName;
   const userGames = document.querySelector('#meu-select').value;
   userData.game = userGames;
-  console.log(userData)
   firebase.firestore().collection('user-profile').add(userData)
   .then(() => {
   userName.value = '';
-  
+  location.replace('#players')
 })
 
 }
