@@ -1,4 +1,4 @@
-import Register from './pages/register.js';
+import Profile from './pages/profile.js'; 
 import Login from './pages/login.js';
 import Feed from './pages/feed.js';
 import renderAvatar from './pages/feed.js';
@@ -25,8 +25,8 @@ const authCheck = () => {
 };
 
 const routes = () => {
-  if (location.hash === '#register') {
-    main.innerHTML = Register();
+  if (location.hash === '#profile') {
+    main.innerHTML = Profile();
   } else if (location.hash === '') {
     main.innerHTML = Login();
   } else if (location.hash === '#feed') {

@@ -62,14 +62,14 @@ const renderAvatar = (playerAvatar) => {
   document.querySelector('.avatar').innerHTML = template;
 };
 
-const test = () => {
-  console.log('enviando msg')
+const sendMessage = () => {
+ location.replace('#message');
 };
 
 hammer.on('swiperight', () => {
   document.querySelector('.avatar-img').classList.add('animated', 'rotateOutUpRight');
   document.querySelector('.avatar-img').addEventListener('animationend', getPlayerAvatar);
-  test();
+  sendMessage();
 });
 
 hammer.on('swipeleft', () => {
