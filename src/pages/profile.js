@@ -1,6 +1,7 @@
-import Button from '../components/button.js'; 
+import Button from '../components/button.js';
 import Input from '../components/input.js';
 import avatar from '../avatarDB.js';
+import actionIcon from '../components/action-icon.js';
 
 const logout = () => {
   app.auth.signOut()
@@ -25,17 +26,15 @@ window.clickDoAvatar = function clickDoAvatar(event) {
 }
 
 const Profile = () => {
- 
   document.querySelector('body').className = '';
   const template = `
-  <nav class="nav-bar"> 
+  <nav class="navbar"> 
    <strong>The Match Game
-   ${Button({
-    type: "button",
-    title: "Voltar",
-    class: "primary-button btn-voltar",
+   ${actionIcon({
+    class: 'signout-icon fas fa-sign-out-alt',
+    name: 'sair',
+    dataDocid: 'a',
     onClick: logout,
-    disabled: "enabled"
   })}
   </nav>
   <section class='container main-container'>
@@ -48,18 +47,18 @@ const Profile = () => {
     <section class="container">
       <form class="container" id="register-form">      
         ${Input({
-          type: "text",
-          placeholder: "Nome",
-          class: "js-name-input primary-input"
-        })}
+    type: 'text',
+    placeholder: 'Nome',
+    class: '-name-input primary-input',
+  })}
         <select id='meu-select'>
         </select>
         ${Button({
-          type: "submit",
-          title: "Cadastrar",
-          class: "primary-button",
-          onClick: newUser
-        })}
+    type: 'submit',
+    title: 'Cadastrar',
+    class: 'primary-button',
+    onClick: newUser
+  })}
 
       </form>
     </section>
@@ -71,7 +70,7 @@ const Profile = () => {
 
 function createGame() {
   fetch(
-    "https://www.boardgameatlas.com/api/search?order_by=popularity&ascending=false&client_id=SB1VGnDv7M&limit=50"
+    'https://www.boardgameatlas.com/api/search?order_by=popularity&ascending=false&client_id=SB1VGnDv7M&limit=50'
   )
     .then(response => response.json())
     .then(data => {
@@ -85,11 +84,10 @@ function newUser() {
   const userGames = document.querySelector('#meu-select').value;
   userData.game = userGames;
   firebase.firestore().collection('user-profile').add(userData)
-  .then(() => {
-  userName.value = '';
-  location.replace('#players')
-})
-
+    .then(() => {
+      userName.value = '';
+      location.replace('#players')
+    });
 }
 
 
@@ -97,10 +95,7 @@ window.userData = {
   avatarId: null,
   avatarUrl: null,
   name: null,
-  game: null
-}
-
-
-
+  game: null,
+};
 
 export default Profile
