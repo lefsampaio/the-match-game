@@ -2,6 +2,7 @@ import Button from '../components/button.js';
 import Input from '../components/input.js';
 import textArea from '../components/text-area.js';
 import getNameGame from '../apiBoardGame.js'; 
+import avatar from '../avatarDB.js';
 
 const location = () => {
   location.hash = '';
@@ -63,7 +64,7 @@ const Profile = () => {
           type: "submit",
           title: "Cadastrar",
           class: "primary-button",
-          onClick: "newUser"
+          onClick: newUser
         })}
 
       </form>
@@ -104,8 +105,11 @@ function newUser() {
   userName.value = '';
   userImg.value = '';
   userGames.value = '';
+  location.hash('#feed')
 })
+
 }
+
 
 
 

@@ -8,7 +8,7 @@ const getNameGame = () => {
         game.name);
       const linkGames = data.games.map(game=>
         game.url);  
-      console.log(nameGames, linkGames);
+      
       return nameGames, linkGames
       
     })
