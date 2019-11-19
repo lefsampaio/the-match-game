@@ -35,5 +35,17 @@
   },
   "dependencies": {
     "serve": "^11.2.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lefsampaio/the-match-game.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/lefsampaio/the-match-game/issues"
+  },
+  "homepage": "https://github.com/lefsampaio/the-match-game#readme"
 }

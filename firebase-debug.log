@@ -1,0 +1,237 @@
+[debug] [2019-11-18T21:27:31.303Z] ----------------------------------------------------------------------
+[debug] [2019-11-18T21:27:31.306Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-11-18T21:27:31.307Z] CLI Version:   7.4.0
+[debug] [2019-11-18T21:27:31.307Z] Platform:      linux
+[debug] [2019-11-18T21:27:31.307Z] Node Version:  v8.10.0
+[debug] [2019-11-18T21:27:31.307Z] Time:          Mon Nov 18 2019 18:27:31 GMT-0300 (-03)
+[debug] [2019-11-18T21:27:31.307Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-11-18T21:27:31.318Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-18T21:27:31.318Z] > authorizing via signed-in user
+[debug] [2019-11-18T21:27:31.318Z] [iam] checking project thematchgame-cfe88 for permissions ["firebase.projects.get"]
+[debug] [2019-11-18T21:27:31.321Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/thematchgame-cfe88:testIamPermissions  
+
+[debug] [2019-11-18T21:27:32.654Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-18T21:27:32.659Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/thematchgame-cfe88  
+ 
+[debug] [2019-11-18T21:27:34.114Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/fabricia/Desktop/the-match-game'...
+[info] 
+[debug] [2019-11-18T21:27:34.125Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/thematchgame-cfe88/webApps/-/config  
+ 
+[debug] [2019-11-18T21:27:35.610Z] <<< HTTP RESPONSE 200
+[warn] ⚠  hosting: Port 5000 is not available. Trying another port...
+[info] i  hosting: Serving hosting files from: src
+[info] ✔  hosting: Local server: http://localhost:5005
+[debug] [2019-11-19T12:16:13.800Z] ----------------------------------------------------------------------
+[debug] [2019-11-19T12:16:13.808Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-11-19T12:16:13.808Z] CLI Version:   7.4.0
+[debug] [2019-11-19T12:16:13.808Z] Platform:      linux
+[debug] [2019-11-19T12:16:13.808Z] Node Version:  v8.10.0
+[debug] [2019-11-19T12:16:13.808Z] Time:          Tue Nov 19 2019 09:16:13 GMT-0300 (-03)
+[debug] [2019-11-19T12:16:13.809Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-11-19T12:16:13.864Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-19T12:16:13.865Z] > authorizing via signed-in user
+[debug] [2019-11-19T12:16:13.865Z] [iam] checking project thematchgame-cfe88 for permissions ["firebase.projects.get"]
+[debug] [2019-11-19T12:16:13.869Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-11-19T12:16:13.870Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-11-19T12:16:29.276Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-19T12:16:29.331Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/thematchgame-cfe88:testIamPermissions  
+
+[debug] [2019-11-19T12:16:31.494Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-19T12:16:31.500Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/thematchgame-cfe88  
+ 
+[debug] [2019-11-19T12:16:34.283Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/fabricia/Desktop/the-match-game'...
+[info] 
+[debug] [2019-11-19T12:16:34.291Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/thematchgame-cfe88/webApps/-/config  
+ 
+[debug] [2019-11-19T12:16:36.776Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: src
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-11-19T12:41:45.414Z] Error: socket hang up
+    at TLSSocket.onHangUp (_tls_wrap.js:1137:19)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-11-19T12:42:34.815Z] ----------------------------------------------------------------------
+[debug] [2019-11-19T12:42:34.819Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-11-19T12:42:34.819Z] CLI Version:   7.4.0
+[debug] [2019-11-19T12:42:34.819Z] Platform:      linux
+[debug] [2019-11-19T12:42:34.819Z] Node Version:  v8.10.0
+[debug] [2019-11-19T12:42:34.819Z] Time:          Tue Nov 19 2019 09:42:34 GMT-0300 (-03)
+[debug] [2019-11-19T12:42:34.819Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-11-19T12:42:34.873Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-19T12:42:34.874Z] > authorizing via signed-in user
+[debug] [2019-11-19T12:42:34.874Z] [iam] checking project thematchgame-cfe88 for permissions ["firebase.projects.get"]
+[debug] [2019-11-19T12:42:34.879Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/thematchgame-cfe88:testIamPermissions  
+
+[debug] [2019-11-19T12:42:37.775Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-19T12:42:37.780Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/thematchgame-cfe88  
+ 
+[debug] [2019-11-19T12:43:03.641Z] Error: socket hang up
+    at TLSSocket.onHangUp (_tls_wrap.js:1137:19)
+    at Object.onceWrapper (events.js:313:30)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+[error] 
+[error] Error: Server Error. socket hang up
+[debug] [2019-11-19T12:53:56.026Z] ----------------------------------------------------------------------
+[debug] [2019-11-19T12:53:56.030Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-11-19T12:53:56.030Z] CLI Version:   7.4.0
+[debug] [2019-11-19T12:53:56.030Z] Platform:      linux
+[debug] [2019-11-19T12:53:56.030Z] Node Version:  v8.10.0
+[debug] [2019-11-19T12:53:56.030Z] Time:          Tue Nov 19 2019 09:53:56 GMT-0300 (-03)
+[debug] [2019-11-19T12:53:56.030Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-11-19T12:53:56.057Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-19T12:53:56.057Z] > authorizing via signed-in user
+[debug] [2019-11-19T12:53:56.057Z] [iam] checking project thematchgame-cfe88 for permissions ["firebase.projects.get"]
+[debug] [2019-11-19T12:53:56.060Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/thematchgame-cfe88:testIamPermissions  
+
+[debug] [2019-11-19T12:54:01.911Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-19T12:54:01.914Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/thematchgame-cfe88  
+ 
+[debug] [2019-11-19T12:54:05.430Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/fabricia/Desktop/the-match-game'...
+[info] 
+[debug] [2019-11-19T12:54:05.441Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/thematchgame-cfe88/webApps/-/config  
+ 
+[debug] [2019-11-19T12:54:06.209Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: src
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-11-19T14:30:39.623Z] ----------------------------------------------------------------------
+[debug] [2019-11-19T14:30:39.631Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-11-19T14:30:39.632Z] CLI Version:   7.4.0
+[debug] [2019-11-19T14:30:39.632Z] Platform:      linux
+[debug] [2019-11-19T14:30:39.632Z] Node Version:  v8.10.0
+[debug] [2019-11-19T14:30:39.632Z] Time:          Tue Nov 19 2019 11:30:39 GMT-0300 (-03)
+[debug] [2019-11-19T14:30:39.632Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-11-19T14:30:39.688Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-19T14:30:39.689Z] > authorizing via signed-in user
+[debug] [2019-11-19T14:30:39.689Z] [iam] checking project thematchgame-cfe88 for permissions ["firebase.projects.get"]
+[debug] [2019-11-19T14:30:39.693Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-11-19T14:30:39.694Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-11-19T14:30:40.465Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-19T14:30:40.534Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/thematchgame-cfe88:testIamPermissions  
+
+[debug] [2019-11-19T14:30:41.979Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-19T14:30:41.984Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/thematchgame-cfe88  
+ 
+[debug] [2019-11-19T14:30:45.702Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/fabricia/Desktop/the-match-game'...
+[info] 
+[debug] [2019-11-19T14:30:45.709Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/thematchgame-cfe88/webApps/-/config  
+ 
+[debug] [2019-11-19T14:30:47.532Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: src
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-11-19T14:58:34.791Z] Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at TLSSocket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-11-19T14:58:34.798Z] Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at TLSSocket.socketCloseListener (_http_client.js:363:23)
+    at emitOne (events.js:121:20)
+    at TLSSocket.emit (events.js:211:7)
+    at _handle.close (net.js:567:12)
+    at TCP.done [as _onclose] (_tls_wrap.js:356:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-11-19T14:59:51.080Z] ----------------------------------------------------------------------
+[debug] [2019-11-19T14:59:51.086Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-11-19T14:59:51.087Z] CLI Version:   7.4.0
+[debug] [2019-11-19T14:59:51.087Z] Platform:      linux
+[debug] [2019-11-19T14:59:51.087Z] Node Version:  v8.10.0
+[debug] [2019-11-19T14:59:51.088Z] Time:          Tue Nov 19 2019 11:59:51 GMT-0300 (-03)
+[debug] [2019-11-19T14:59:51.088Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-11-19T14:59:51.144Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-19T14:59:51.145Z] > authorizing via signed-in user
+[debug] [2019-11-19T14:59:51.145Z] [iam] checking project thematchgame-cfe88 for permissions ["firebase.projects.get"]
+[debug] [2019-11-19T14:59:51.150Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/thematchgame-cfe88:testIamPermissions  
+
+[debug] [2019-11-19T14:59:52.760Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-19T14:59:52.763Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/thematchgame-cfe88  
+ 
+[debug] [2019-11-19T14:59:54.696Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/fabricia/Desktop/the-match-game'...
+[info] 
+[debug] [2019-11-19T14:59:54.703Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/thematchgame-cfe88/webApps/-/config  
+ 
+[debug] [2019-11-19T14:59:59.506Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: src
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-11-19T19:58:20.384Z] Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at TLSSocket.socketOnEnd (_http_client.js:423:23)
+    at emitNone (events.js:111:20)
+    at TLSSocket.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-11-19T19:58:21.250Z] Error: socket hang up
+    at createHangUpError (_http_client.js:331:15)
+    at TLSSocket.socketCloseListener (_http_client.js:363:23)
+    at emitOne (events.js:121:20)
+    at TLSSocket.emit (events.js:211:7)
+    at _handle.close (net.js:567:12)
+    at TCP.done [as _onclose] (_tls_wrap.js:356:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2019-11-19T19:59:19.454Z] ----------------------------------------------------------------------
+[debug] [2019-11-19T19:59:19.461Z] Command:       /usr/bin/node /usr/local/bin/firebase serve
+[debug] [2019-11-19T19:59:19.461Z] CLI Version:   7.4.0
+[debug] [2019-11-19T19:59:19.461Z] Platform:      linux
+[debug] [2019-11-19T19:59:19.461Z] Node Version:  v8.10.0
+[debug] [2019-11-19T19:59:19.461Z] Time:          Tue Nov 19 2019 16:59:19 GMT-0300 (-03)
+[debug] [2019-11-19T19:59:19.461Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-11-19T19:59:19.518Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-19T19:59:19.519Z] > authorizing via signed-in user
+[debug] [2019-11-19T19:59:19.519Z] [iam] checking project thematchgame-cfe88 for permissions ["firebase.projects.get"]
+[debug] [2019-11-19T19:59:19.523Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-11-19T19:59:19.523Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-11-19T19:59:20.184Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-19T19:59:20.231Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/thematchgame-cfe88:testIamPermissions  
+
+[debug] [2019-11-19T19:59:21.377Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-19T19:59:21.382Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/thematchgame-cfe88  
+ 
+[debug] [2019-11-19T19:59:22.815Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/fabricia/Desktop/the-match-game'...
+[info] 
+[debug] [2019-11-19T19:59:22.824Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/thematchgame-cfe88/webApps/-/config  
+ 
+[debug] [2019-11-19T19:59:24.170Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: src
+[info] ✔  hosting: Local server: http://localhost:5000
