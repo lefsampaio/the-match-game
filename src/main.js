@@ -1,6 +1,7 @@
 import Register from './pages/register.js';
 import Login from './pages/login.js';
 import Feed from './pages/feed.js';
+import renderAvatar from './pages/feed.js';
 
 
 const main = document.querySelector('main');
@@ -10,12 +11,13 @@ const authCheck = () => {
     if (user) {
       location.hash = '#feed';
       
-      firebase.firestore().collection('posts')
-        .where('private', '==', 'false')
-        .orderBy('timestamp', 'desc')
-        .onSnapshot((querySnapshot) => {
-          main.innerHTML = Feed({ posts: querySnapshot });
-        });
+    //   firebase.firestore().collection('posts')
+    //     .where('private', '==', 'false')
+    //     .orderBy('timestamp', 'desc')
+    //     .onSnapshot((querySnapshot) => {
+    //       main.innerHTML = Feed({ posts: querySnapshot });
+    //     });
+    // } 
     } else {
       location.hash = '';
     }
