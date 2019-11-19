@@ -18,4 +18,4 @@ getNameGame()
  
 export default getNameGame 
 
-// cardsGiphy.innerHTML = `<img class='gif-card'src="${giphyCards}">`;
+// cardsGiphy.innerHTML = `<img class='js-game-name'src="${nameGames}">`;
