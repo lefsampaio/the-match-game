@@ -4,12 +4,16 @@
 let cardIndex = 0;
 
 const logout = () => {
+  console.log('xuxu')
   app.auth.signOut()
     .then(() => location.hash = '')
     .catch((error) => {
       `<p>${error}</p>`
     });
 };
+
+// document.getElementById('teste').addEventListener('click', teste)
+// const teste = () => console.log('teste')
 
 const renderAvatar = () => {
   const template = `
@@ -30,7 +34,7 @@ const renderAvatar = () => {
     <a href="#"><li>Promoções</li></a>
     <a href="#"><li>Meus Cupons</li></a>
     <a href="#"><li>Nossos Parceiros</li></a>
-    <a href="#"><li>Sair</li></a>
+    <a href="#"><li id="teste">Sair</li></a>
   </ul>
 </div>
 ${actionIcon({
