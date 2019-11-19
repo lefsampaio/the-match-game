@@ -86,101 +86,28 @@ body {
 .signout-icon{
   color: #F28627;
   font-size: 33px;
+  margin-left: 7%;
+  margin-right: -16%;
+  margin-top: 4%;
 }
 
+#meu-select {
+  border-radius: 18px;
+  width: 238px;
+  height: 31px;
+  border: 1px solid gray;
+  padding-left: 12px;
+  padding-top: 4px;
+  margin-top: 10px;
+}
 
-
-
-
-a {
-  text-decoration: none;
+.titulo-avatar {
   color: #ffffff;
-  transition: color 0.3s ease;
 }
 
-a:hover {
-  color: #BF5934;
-}
 
-#menuToggle {
-  display: block;
-  position: relative;
-  top: 36px;
-  z-index: 1;
-  -webkit-user-select: none;
-  user-select: none;
-}
 
-#menuToggle input {
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  opacity: 0; 
-  z-index: 2; 
-  -webkit-touch-callout: none;
-}
 
-#menuToggle span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #cdcdcd;
-  border-radius: 3px;
-  z-index: 1;
-  transform-origin: 4px 0px;
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child {
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #ffffff;
-}
-
-#menuToggle input:checked ~ span:nth-last-child(3) {
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-#menuToggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-#menu {
-  position: absolute;
-  width: 245px;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  background: #011826;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  transform-origin: 0% 0%;
-  transform: translate(-110%, 0);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li {
-  padding: 10px 0;
-  font-size: 22px;
-}
-
-#menuToggle input:checked ~ ul {
-  transform: none;
-}
 
 
 .background {

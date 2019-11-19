@@ -40,11 +40,11 @@ const Login = () => {
       ${Input({ type: 'email', placeholder: 'Email', class: 'js-email-input primary-input' })}
       ${Input({ type: 'password', placeholder: 'Senha', class: 'js-password-input primary-input' })}
       ${Button({
-        type: 'submit', title: 'Login', class: 'primary-button', onClick: enviarLogin, disabled: 'enabled',
-      })}
+    type: 'submit', title: 'Login', class: 'primary-button', onClick: enviarLogin, disabled: 'enabled',
+  })}
       ${Button({
-        type: 'submit', title: 'Cadastrar', class: 'primary-button', onClick: enviarCadastro, disabled: 'enabled',
-      })}
+    type: 'submit', title: 'Cadastrar', class: 'primary-button', onClick: enviarCadastro, disabled: 'enabled',
+  })}
        </section>
       </section>
       `;
