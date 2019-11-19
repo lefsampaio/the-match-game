@@ -1,10 +1,9 @@
- import actionIcon from '../components/action-icon.js';
- import avatar from '../avatarDB.js';
- 
+import actionIcon from '../components/action-icon.js';
+import avatar from '../avatarDB.js';
+
 let cardIndex = 0;
 
 const logout = () => {
-  console.log('xuxu')
   app.auth.signOut()
     .then(() => location.hash = '')
     .catch((error) => {
@@ -12,39 +11,17 @@ const logout = () => {
     });
 };
 
-// document.getElementById('teste').addEventListener('click', teste)
-// const teste = () => console.log('teste')
-
 const renderAvatar = () => {
   const template = `
   <nav role="navigation" class="navbar">
-  
-  <div id="menuToggle">
- 
-  <input type="checkbox" />
-  
- 
-  <span></span>
-  <span></span>
-  <span></span>
-  
- 
-  <ul id="menu">
-    <a href="#"><li>Editar Perfil</li></a>
-    <a href="#"><li>Promoções</li></a>
-    <a href="#"><li>Meus Cupons</li></a>
-    <a href="#"><li>Nossos Parceiros</li></a>
-    <a href="#"><li id="teste">Sair</li></a>
-  </ul>
-</div>
-${actionIcon({
-  class: 'signout-icon fas fa-sign-out-alt',
-  name: 'sair',
-  dataDocid: 'a',
-  onClick: logout,
-})}
-
-  The Match Game </nav>
+  The Match Game 
+  ${actionIcon({
+    class: 'signout-icon fas fa-sign-out-alt',
+    name: 'sair',
+    dataDocid: 'a',
+    onClick: logout,
+  })}
+  </nav>
   <section class="avatar">
         <div class="avatar-img" > 
           <img class="img" src="${avatar[cardIndex].url}">
