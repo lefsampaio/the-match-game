@@ -209,10 +209,14 @@ a:hover {
   flex-direction: column;
 }
 .escolha-avatar{
-margin: 4%;
+margin: 6% 2% 4% 8%;
 }
 
 
+
+.btn-voltar{
+  margin-left: 65%;
+}
 
 .primary-button {
   padding: 10px;
@@ -238,8 +242,15 @@ margin: 4%;
 }
 
 .logo-avatar{
-  width: 120px;
-  
+  width: 50%;
+}
+
+.btn-avt{
+  background: none;
+  border: 0;
+  width: 30%;
+  border-bottom: none;
+
 }
 
 .primary-input{

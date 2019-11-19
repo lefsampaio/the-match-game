@@ -1,7 +1,5 @@
 import Button from '../components/button.js'; 
 import Input from '../components/input.js';
-import textArea from '../components/text-area.js';
-import getNameGame from '../apiBoardGame.js'; 
 import avatar from '../avatarDB.js';
 
 const location = () => {
@@ -13,12 +11,17 @@ const data = avatar
 function buildHtml(data) {
   let html = "";
   data.forEach((obj) => html += `
-  <img class="logo-avatar" src="${obj.url}" id="${obj.id}" ${Button(chooseAvatar)}>`)
+  <button onclick='clickDoAvatar(event)' class="btn-avt"><img class="logo-avatar" src="${obj.url}" id="${obj.id}"></button>`)
   return html
 }
 
+window.clickDoAvatar = function clickDoAvatar(event) {
+  window.userData.avatarId = event.target.id;
+  window.userData.avatarUrl = event.target.src;
+}
 
 const Profile = () => {
+ 
   document.querySelector('body').className = '';
   const template = `
   <nav class="nav-bar"> 
@@ -26,7 +29,7 @@ const Profile = () => {
    ${Button({
     type: "button",
     title: "Voltar",
-    class: "primary-button",
+    class: "primary-button btn-voltar",
     onClick: location,
     disabled: "enabled"
   })}
@@ -45,21 +48,8 @@ const Profile = () => {
           placeholder: "Nome",
           class: "js-name-input primary-input"
         })}
-        ${Input({
-          type: "text",
-          placeholder: "Escolha seus 5 jogos favoritos",
-          class: "js-game-name primary-input"
-        })}
-        ${Button({
-          type: "submit",
-          title: "+",
-          class: "btn-add",
-          onClick: chooseGame
-        })}
-        ${textArea({
-          class: "add-comment list-games",
-          placeholder: "Cinco jogos favoritos..."
-        })}
+        <select id='meu-select'>
+        </select>
         ${Button({
           type: "submit",
           title: "Cadastrar",
@@ -71,45 +61,41 @@ const Profile = () => {
     </section>
   </section>
   `;
+  createGame()
   return template;
 };
 
-
-// nameGames.forEach(item => {
-//   addOption(item)
-// })
-
-function chooseGame() {
- 
-    const test = document.querySelector('.js-game-name');
-    const option = document.createElement('p');
-    const area = document.querySelector('.add-comment');
-    option.text = "";
-    area.add(test);
-};
-
-
-function chooseAvatar() {
-//   const avatar = document.querySelector('.js-game-name').value; 
-  
-}; 
-
-chooseAvatar()
+function createGame() {
+  fetch(
+    "https://www.boardgameatlas.com/api/search?order_by=popularity&ascending=false&client_id=SB1VGnDv7M&limit=50"
+  )
+    .then(response => response.json())
+    .then(data => {
+      document.querySelector('#meu-select').innerHTML = data.games.map(game => `<option value=${game.name}>${game.name}</option>`).join('');
+    })
+}
 
 function newUser() {
-  const userName = document.querySelector('.js-name-input')
-  const userImg = document.querySelector('.logo-avatar')
-  const userGames = document.querySelector('.list-games')
-  firebase.firestore().collection('user-profile').add(userProfile)
+  const userName = document.querySelector('.js-name-input').value;
+  userData.name = userName;
+  const userGames = document.querySelector('#meu-select').value;
+  userData.game = userGames;
+  console.log(userData)
+  firebase.firestore().collection('user-profile').add(userData)
   .then(() => {
   userName.value = '';
-  userImg.value = '';
-  userGames.value = '';
-  location.hash('#feed')
+  
 })
 
 }
 
+
+window.userData = {
+  avatarId: null,
+  avatarUrl: null,
+  name: null,
+  game: null
+}
 
 
 
