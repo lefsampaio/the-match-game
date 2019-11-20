@@ -13,7 +13,7 @@ const authCheck = () => {
       } else if (location.hash === '#players') {
         renderAvatar();
       } else if (location.hash === '#message') {
-        main.innerHTML = `<h1>Sua mensagem</h1>`
+        location.replace('#message')
       }
     } else {
       location.hash = '';
