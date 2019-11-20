@@ -2,6 +2,7 @@ import actionIcon from '../components/action-icon.js';
 import avatar from '../avatarDB.js';
 
 let cardIndex = 0;
+let gamesIndex= [];
 
 const logout = () => {
   app.auth.signOut()
@@ -25,7 +26,9 @@ const renderAvatar = () => {
   <section class="avatar">
         <div class="avatar-img" > 
           <img class="img" src="${avatar[cardIndex].url}">
-          <p class="p-name">${avatar[cardIndex].name}</p>
+          <p>${avatar[cardIndex].name}</p>
+          <h4 class="p-class">Jogos favoritos</h4>
+          <p>${avatar[cardIndex].games[gamesIndex.length]}</p>
         </div>
         <div class="btn_swipe">
             <button><i class="fa fa-times"></i></button>
