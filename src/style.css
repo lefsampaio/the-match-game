@@ -228,6 +228,58 @@ margin: 6% 2% 4% 8%;
   color: #73392C;
 }
 
+.comment-area {
+  width: 96.5%;
+  padding: 3px 7px;
+  margin-bottom: 5px;
+  background-color: #efeeee;
+  border-radius: 10px;
+  padding: 100px;
+}
+
+.logo{
+  width: 50px;
+  margin-bottom: -20px;
+  position: center;
+}
+
+.add-post{
+  width: 82vw;
+  height: 73px;
+  padding: 10px;
+  resize: none;
+  font-size: 17px;
+  align-self: center;
+  border-radius: 8px;
+  border: 1px solid grey;
+  font-family: 'Hind', sans-serif;
+}
+
+.posted-name{
+  color: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 8px;
+  font-size: 15px;
+  margin-bottom: 13px;
+  background-color: #ffffff;
+  font-family: 'Hind', sans-serif;
+  border-radius: 10rem 10rem 0 10rem;
+}
+
+/* .post-btn { */
+.margin {
+  margin: 30px;
+  background-color: #73392C;
+}
+
+.area-text {
+  position: fixed;
+  bottom: 5px;
+  background-color: #73392C;
+}
+
 
 @media (min-width: 900px){
 
