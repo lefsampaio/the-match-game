@@ -37,6 +37,7 @@ body {
 .p-class{
   margin: 0; 
 }
+
 .img {
   width: 70%;
   align-self: center;
@@ -246,7 +247,7 @@ margin: 6% 2% 4% 8%;
   align-self: center;
   border-radius: 8px;
   border: 1px solid grey;
-  font-family: 'Hind', sans-serif;
+ 
 }
 
 .posted-name{
@@ -258,14 +259,13 @@ margin: 6% 2% 4% 8%;
   font-size: 15px;
   margin-bottom: 13px;
   background-color: #ffffff;
-  font-family: 'Hind', sans-serif;
+  
   border-radius: 10rem 10rem 0 10rem;
+  flex-direction: column;
+  height: auto;
 }
-
-/* .post-btn { */
-.margin {
-  margin: 30px;
-  background-color: #73392C;
+.messages-date{
+  margin:0;
 }
 
 .area-text {
