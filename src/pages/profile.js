@@ -49,7 +49,7 @@ const Profile = () => {
         ${Input({
     type: 'text',
     placeholder: 'Nome',
-    class: '-name-input primary-input',
+    class: 'js-name-input primary-input',
   })}
         <select id='meu-select'>
         </select>
@@ -86,8 +86,8 @@ function newUser() {
   firebase.firestore().collection('user-profile').add(userData)
     .then(() => {
       userName.value = '';
-      location.replace('#players')
     });
+    location.replace('#players')
 }
 
 
