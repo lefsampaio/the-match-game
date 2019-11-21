@@ -28,7 +28,7 @@ const renderAvatar = () => {
           <img class="img" src="${avatar[cardIndex].url}">
           <p>${avatar[cardIndex].name}</p>
           <h4 class="p-class">Jogos favoritos</h4>
-          <p>${avatar[cardIndex].games[gamesIndex.length]}</p>
+          <p class="p-class">${avatar[cardIndex].games[gamesIndex.length]}</p>
         </div>
         <div class="btn_swipe">
             <button><i class="fa fa-times"></i></button>
