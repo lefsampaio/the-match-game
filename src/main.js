@@ -14,6 +14,7 @@ const authCheck = () => {
         renderAvatar();
       } else if (location.hash === '#message') {
         main.innerHTML = Message();
+        location.replace('#message')
       }
     } else {
       location.hash = '';
