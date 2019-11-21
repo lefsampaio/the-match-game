@@ -56,7 +56,6 @@ const renderAvatar = () => {
 };
 
 window.app = {
-  renderAvatar,
   db: firebase.firestore(),
   auth: firebase.auth(),
 };
