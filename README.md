@@ -2,7 +2,7 @@
 
 Aplicação desenvolvida em Hackton de dois dias com objetivo de desenvolver uma solução tecnológica relacionada a problemas no nicho do entretenimento.
 
-![](/src/image/logo_matchgame.png)
+![](/src/image/logo_readme.jpeg)
 
 Com base nessa proposta realizamos algumas pesquisas no campo de boardgames e descobrimos que os usuários(gamers) possuiam uma dificuldade(problema) no que se refere a encontrar pessoas para jogar. 
 
