@@ -14,7 +14,7 @@ const Message = () => {
 		onClick: backTofeed,
 		})}
   </nav>
-	<form class='margin'>
+	<form class='container'>
 		${logo({ img: 'image/avatar1.png', classImg: 'logo', classP: 'text-logo', text: 'Mensagens' })}
 		<div id='mensagem'></div>
 		${textArea({ class: 'add-post text-message', placeholder: 'Escreva sua mensagem', id: 'textAreaMessage' })}
@@ -37,9 +37,9 @@ function mostrarMensagem() {
 		querySnaphot.forEach((doc) => {
 			messagelayout += `
 			<li class='add-post posted-name'>
-				<p>${doc.data().name}</p>
+				<h3 class="messages-date">${doc.data().name}</h3>
 				<p>${doc.data().text}</p>
-				<p>${doc.data().date}</p>
+				<p class="messages-date">${doc.data().date}</p>
 			</li>`
 		});
 		document.getElementById('mensagem').innerHTML = messagelayout;
